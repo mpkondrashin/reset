@@ -155,7 +155,11 @@ def main():
         return
 
     if args.command == 'reset':
-        print("Reset settings", file=sys.stderr)
+        if not args.antimalware and not args.settings and not args.all:
+            print("one of --antimalware or --settings or --all shold be set", file=sys.stderr)
+            return
+
+        print(f"Reset settings", file=sys.stderr)
         for computer_id in iterate_computer_ids(args.filename):
             print(f"Process computer id: {computer_id}")
             if args.antimalware or args.all:

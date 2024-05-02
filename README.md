@@ -12,7 +12,7 @@
 
 1. Download [latest release](https://github.com/mpkondrashin/reset/archive/refs/heads/master.zip). 
 2. Unpack zip archive.
-3. Create Virtual Environment using following command: ```python -v venv venv```
+3. Create Virtual Environment using following command: ```python3 -m venv venv```
 4. Activate source: ```source venv/bin/activate```
 5. Install all required packages: ```pip install -r requirements.txt```
 
