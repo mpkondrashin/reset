@@ -41,3 +41,16 @@ python reset.py --hostname https://dsm.local:4119/api --apikey XYZ reset --filen
 ```
 
 replace ```--antimalware``` to ```--settings``` to reset general settings or to ```---all``` to reset both.
+
+## Hostname values
+
+For Deep Security On-premises hostname should be in form
+```commandline
+https://<hostname or IP address of your DSM>:4119/api
+```
+For Cloud One Workload Security (or Vision One Workload Security) hostname should be
+```commandline
+https://workload.<region>.cloudone.trendmicro.com/api
+```
+Correct &lt;region&gt; value can be found on Cloud One console -> Account Settings. 
+
